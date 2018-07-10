@@ -53,6 +53,7 @@ function moveArrow(targetDeg, smoothing, lastArrowAngle, tempTargetRpm) {
         
         while (tempTargetRpm >= values[values.length-2]) {
             values.pop();
+            smoothing+=0.5;
             tempTargetRpm = next(targetRpm, smoothing);
         }
     }
