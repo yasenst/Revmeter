@@ -35,25 +35,25 @@ function moveArrow(targetDeg, smoothing, lastArrowAngle, tempTargetRpm) {
         return;
     } 
     if (currentArrowAngle == lastArrowAngle) {
-        smoothing+=0.05;
+        smoothing+=0.01;
     }
     var targetRpm = angleToRpm(targetDeg);
     if (currentArrowAngle < targetDeg && values.length > 2) {
         tempTargetRpm = next(targetRpm, smoothing);
         while (tempTargetRpm <= values[values.length-2]) {
             values.pop();
-            smoothing+=0.05;
+            smoothing+=0.01;
             tempTargetRpm = next(targetRpm, smoothing);
         }
     } 
     
     else if (currentArrowAngle > targetDeg && values.length > 2) {
-        smoothing=0.5;
+        smoothing=0.15;
         tempTargetRpm = next(targetRpm, smoothing);
         
         while (tempTargetRpm >= values[values.length-2]) {
             values.pop();
-            smoothing+=0.5;
+            smoothing+=0.05;
             tempTargetRpm = next(targetRpm, smoothing);
         }
     }
@@ -78,7 +78,7 @@ $('#myButton').on('click', function () {
     var newRpm = angleToRpm(angle);
     console.log("Next target: " + newRpm);
 
-    var initialSmoothing = 0.05;
+    var initialSmoothing = 0.01;
     var tempTargetRpm;
     var lastArrowAngle;
     //console.log(values);
