@@ -48,12 +48,12 @@ function moveArrow(targetDeg, smoothing, lastArrowAngle, tempTargetRpm) {
     } 
     
     else if (currentArrowAngle > targetDeg && values.length > 2) {
-        smoothing=0.15;
+        smoothing=0.18;
         tempTargetRpm = next(targetRpm, smoothing);
         
         while (tempTargetRpm >= values[values.length-2]) {
             values.pop();
-            smoothing+=0.05;
+            smoothing+=0.12;
             tempTargetRpm = next(targetRpm, smoothing);
         }
     }
