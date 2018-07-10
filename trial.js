@@ -74,14 +74,14 @@ $('#myButton').on('click', function () {
     var rpm = $('#target').val();
 
     var angle = rpmToAngle(rpm);
-    console.log(" " + angle);
+    //console.log(" " + angle);
     var newRpm = angleToRpm(angle);
-    console.log(newRpm);
+    console.log("Next target: " + newRpm);
 
     var initialSmoothing = 0.05;
     var tempTargetRpm;
     var lastArrowAngle;
-    console.log(values);
+    //console.log(values);
     moveArrow(angle, initialSmoothing, lastArrowAngle, tempTargetRpm);   
     
 });
