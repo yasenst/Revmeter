@@ -1,0 +1,6 @@
+{
+    "name": "please-work",
+    "dependencies": {
+        "lpf": "^1.0.0"
+    }
+}
