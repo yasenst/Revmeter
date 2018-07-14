@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="test-styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="left">
+        <label>RPM:</label> 
+        <input type="text"  id="target" placeholder="0-6000"/>
+        <button id="myButton">GO</button>
+
+        <input id="dsl" type="radio" name="fuel" value="diesel" checked>
+        <label for="dsl">DIESEL</label>
+
+        <input id="gasl" type="radio" name="fuel" value="petrol">
+        <label for="gasl">GASOLINE</label>
+    </div>
+
+    <div id="tachometer">
+        <div class="ii">
+            <div><b><span class="num_1">0</span></b></div>
+            <div><b></b></div>
+            <div><b><span class="num_2">1</span></b></div>
+            <div><b></b></div>
+            <div><b><span class="num_3">2</span></b></div>
+            <div><b></b></div>
+            <div><b><span class="num_4">3</span></b></div>
+            <div><b></b></div>
+            <div><b><span class="num_5">4</span></b></div>
+            <div><b></b></div>
+            <div><b><span class="num_6">5</span></b></div>
+            <div><b></b></div>
+            <div><b><span class="num_7">6</span></b></div>
+            <div class="gasoline-ticks"><b></b></div>
+            <div class="gasoline-ticks"><b><span class="num_8">7</span></b></div>
+            <div class="gasoline-ticks"><b></b></div>
+            <div class="gasoline-ticks"><b><span class="num_9">8</span></b></div>
+        </div>
+        <div id="division">1/min x 1000</div> 
+        <div id="critical" class="redline1"></div>
+        <div id="line"></div>
+        <div class="pin"><div class="inner"></div></div> 
+    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+    </script>
+    <script 
+        src="node_modules/lpf/lib/bundle.js">
+    </script>
+</body>
+</html>
