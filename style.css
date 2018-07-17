@@ -1,10 +1,57 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-body{
-    background:black;
-   
+body {
+ background-color:black;
+ padding:0;
+ margin:0;
+
 }
 
+#wrapper {
+  
+    display:flex;
+  
+}
+
+#input-fields {
+    display: flex;
+}
+
+#input-fields > div{
+
+    background: #292929;    
+    color:#fff;
+    /*width:300px;*/
+    box-sizing: border-box;
+    padding:10px;
+    /*border-radius: 20px;*/
+   
+    width:50%;
+   /* height:200px;*/
+}
+
+
+svg {
+
+width:50%;
+ visibility: hidden;
+
+}
+
+
+ .tubeLabel{
+ fill:#FCEFD6;
+ font-size:1.4em;
+ font-family: "din-condensed-web", sans-serif;
+ /* font-family: "filson-soft", sans-serif; */
+ text-anchor:middle;
+}
+.dragger{
+ -webkit-tap-highlight-color:transparent;
+}
+
+
+/*
 #left {
     float: left;
     background: #292929;    
@@ -14,8 +61,8 @@ body{
     padding:25px;
     border-radius: 20px; 
 }
-
-#target {
+*/
+.text-input {
 	background: black;
     font-family: 'Open Sans', sans-serif;
     font-size: 16pt;
@@ -27,21 +74,32 @@ body{
 }
 
 label {
+    
     font-size: 2em;
     font-weight: normal;
 } 
 
-#myButton {
-    width:40px;
-    height: 60px;
+.submit-button {
+    width:120px;
+    height: 120px;
     box-sizing: border-box;
     font-weight: bold;
+    font-size: 1.5em;
 }
-
+/*
+#oil-input {
+    margin-left:50%;
+}
+*/
 label[for="dsl"], label[for="gasl"] {
     font-size: 1.1em;
+  
 }
-
+/*
+#radio-buttons {
+    display: block;
+}
+*/
 #tachometer{
     /*margin-left: 330px;*/
     background:#282828;
@@ -252,15 +310,4 @@ label[for="dsl"], label[for="gasl"] {
 .gasoline-ticks {
     visibility: hidden;
 }
-/*
-#wrapper {
-    display:flex;
-}
 
-*/
-
-svg{
-    margin-left:1000px;
-
-    float: left;
-}
