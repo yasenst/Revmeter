@@ -1,75 +1,54 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
- background-color:black;
- padding:0;
- margin:0;
-
+    background-color:black;
+    padding:0;
+    margin:0;
 }
 
 #wrapper {
-  
     display:flex;
-  
 }
 
 #input-fields {
     display: flex;
+
 }
 
 #input-fields > div{
-
     background: #292929;    
     color:#fff;
-    /*width:300px;*/
     box-sizing: border-box;
-    padding:10px;
-    /*border-radius: 20px;*/
-   
+    /*padding:10px;*/
     width:50%;
-   /* height:200px;*/
 }
-
 
 svg {
-
-width:50%;
- visibility: hidden;
-
+    width:50%;
+    visibility: hidden;
 }
 
-
- .tubeLabel{
- fill:#FCEFD6;
- font-size:1.4em;
- font-family: "din-condensed-web", sans-serif;
- /* font-family: "filson-soft", sans-serif; */
- text-anchor:middle;
+.tubeLabel{
+    fill:#FCEFD6;
+    font-size:1.4em;
+    font-family: "din-condensed-web", sans-serif;
+    text-anchor:middle;
 }
+
 .dragger{
- -webkit-tap-highlight-color:transparent;
+    -webkit-tap-highlight-color:transparent;
+
 }
 
 
-/*
-#left {
-    float: left;
-    background: #292929;    
-    color:#fff;
-    width:300px;
-    box-sizing: border-box;
-    padding:25px;
-    border-radius: 20px; 
-}
-*/
 .text-input {
 	background: black;
     font-family: 'Open Sans', sans-serif;
-    font-size: 16pt;
+    font-size: 14pt;
     color: white;  
     text-align: justify;
     padding:0;
-    height: 40px;
+    height: 30px;
     width:200px;
 }
 
@@ -79,31 +58,46 @@ label {
     font-weight: normal;
 } 
 
+.label{
+    fill:black;
+    font-size:2.0em;
+    font-family: "din-condensed-web", sans-serif;
+    text-anchor:middle;
+    letter-spacing:1.2px;
+}
+
+/*
+.label-scale {
+    fill:black;
+    font-size:1.7em;
+    font-family: "din-condensed-web", sans-serif;
+    text-anchor:middle;
+    letter-spacing:1.2px;
+}
+*/
 .submit-button {
-    width:120px;
-    height: 120px;
+    width:90px;
+    height: 60px;
     box-sizing: border-box;
     font-weight: bold;
     font-size: 1.5em;
 }
-/*
-#oil-input {
-    margin-left:50%;
-}
-*/
+
 label[for="dsl"], label[for="gasl"] {
     font-size: 1.1em;
-  
+
 }
-/*
-#radio-buttons {
-    display: block;
+
+#temp-type {
+    display: flex;
+    padding-bottom: 5px;
 }
-*/
+
 #tachometer{
     /*margin-left: 330px;*/
     background:#282828;
-    margin:100px auto;
+    margin:5px auto;
+    margin-right: 0;
     width:600px;
     height:600px;
     box-shadow: inset 0px 0px 9px 3px rgba(0, 0, 0, 1);
